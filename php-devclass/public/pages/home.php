@@ -1,1 +1,0 @@
-<h2>pagina inicial</h2>
