@@ -3,6 +3,7 @@
 
 
 
+
 function load() {
     
 
@@ -12,9 +13,11 @@ function load() {
     
     $page = (!$page) ? "pages/home.php" : "pages/{$page}.php";
 
-      
-    
     return $page;
+    
+    
+    
+    
     
 
 }

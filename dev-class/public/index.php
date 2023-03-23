@@ -1,4 +1,4 @@
-<?php require("./app/functions/pages.php");     ?>
+<?php require("./bootstrap.php");     ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -12,7 +12,14 @@
 <body>
     <div class="container">
 
-    <?php include load()  ?>
+    <?php 
+    try{            
+        include load();     //função para dar upload nas páginas
+    } catch (Exception $e) { // mensagem de erro caso a página não exista 
+        echo $e->getMessage();
+    }
+     
+    ?>
 
     </div>
 </body>
